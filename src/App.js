@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import MyName from './MyName';
 
 function App() {
+  const name = "HAN";
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div>
+        hello {name}!
+      </div>
+      <div>
+        {
+          1 + 1 === 2
+          ? (<div>마자용</div>)
+          : (<div>트려용</div>)
+        }
+      </div>
     </div>
   );
 }
