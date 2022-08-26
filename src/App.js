@@ -1,4 +1,3 @@
-import MyName from './MyName';
 
 function App() {
   const name = "HAN";
