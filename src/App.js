@@ -1,20 +1,19 @@
+import React, {Component} from "react";
+import PhoneForm from './components/PhoneForm';
 
-function App() {
-  const name = "HAN";
-  return (
-    <div>
+class App extends Component {
+  handleCreate = (data) => {
+    console.log(data);
+  }
+  render() {
+    return (
       <div>
-        hello {name}!
+        <PhoneForm
+          onCreate={this.handleCreate}
+        />
       </div>
-      <div>
-        {
-          1 + 1 === 2
-          ? (<div>마자용</div>)
-          : (<div>트려용</div>)
-        }
-      </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default App;

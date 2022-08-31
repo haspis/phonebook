@@ -1,19 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-import MyName from './MyName';
-import Counter from './Counter';
-import LCCounter from './LCCounter';
+import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />    
-    <MyName name='헤헤'/>
-    <Counter />
-    <LCCounter />
+    <App />
   </React.StrictMode>  
 );
 
